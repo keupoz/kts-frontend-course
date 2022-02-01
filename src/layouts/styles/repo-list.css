@@ -1,0 +1,21 @@
+body {
+    padding: 20px;
+}
+
+.repo-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.repo-list__repos {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+.search-bar {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 50px;
+}

@@ -1,0 +1,99 @@
+.git-repo-tiles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.git-repo-tile {
+    background: var(--background);
+    border: var(--border);
+    border-radius: 6px;
+    color: var(--colorHint);
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.git-repo-tile:hover {
+    box-shadow: var(--shadow);
+}
+
+.git-repo-tile__avatar {
+    background: var(--accent);
+    border-radius: 50%;
+
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.git-repo-tile__avatar-letter {
+    color: var(--background);
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.88px;
+}
+
+.git-repo-tile__avatar-image {
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.git-repo-tile__content {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+.git-repo-tile__repo-name {
+    color: var(--colorDefault);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.git-repo-tile__org-link {
+    color: inherit;
+    text-decoration: none;
+
+    align-self: flex-start;
+}
+
+.git-repo-tile__org-link:hover {
+    color: var(--linkHover);
+}
+
+.git-repo-tile__info {
+    display: flex;
+    gap: 20px;
+}
+
+/*
+ * Если выравнивать через vertical-align, то иконка соскакивает вниз
+ * К тому же, в вёрстке имеется лишний пробел, который создаёт отступ, не равный 4 px
+ */
+.git-repo-tile__stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.git-repo-tile__stars-icon {
+    width: 14px;
+    height: 14px;
+}
