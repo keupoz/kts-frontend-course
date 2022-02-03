@@ -83,17 +83,9 @@
     gap: 20px;
 }
 
-/*
- * Если выравнивать через vertical-align, то иконка соскакивает вниз
- * К тому же, в вёрстке имеется лишний пробел, который создаёт отступ, не равный 4 px
- */
-.git-repo-tile__stars {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-}
-
 .git-repo-tile__stars-icon {
+    vertical-align: -1px;
+
     width: 14px;
     height: 14px;
 }
